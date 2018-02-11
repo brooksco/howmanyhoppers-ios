@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet var hopperCountLabel: UILabel!
     
     var hopperCount: Int = 0
-    var hopperData: [NSManagedObject] = []
+    var hopperData: NSManagedObject?
     let defaultSession = URLSession(configuration: .default)
     var dataTask: URLSessionDataTask?
     
@@ -42,7 +42,7 @@ class ViewController: UIViewController {
         
         //3
         do {
-            hopperData = try managedContext.fetch(fetchRequest)
+            hopperData = try managedContext.fetch(fetchRequest).first
         } catch let error as NSError {
             print("Could not fetch. \(error), \(error.userInfo)")
         }
@@ -76,20 +76,22 @@ class ViewController: UIViewController {
                                         if (object["artist_name"] as! String == "Edward Hopper") {
                                             self.hopperCount += 1;
 //                                            self.hopperData.value(forKeyPath: "count") as? Int
-                                            self.hopperCountLabel.text = String(self.hopperCount)
+//                                            self.hopperCountLabel.text = String(self.hopperCount)
                                         }
                                     }
                                 }
                                 
                                 let next = groupObjects["next"] as? String
                                 if next != nil {
-                                    self.hopperCountLabel.text = String(self.hopperCount)
+//                                    self.hopperCountLabel.text = String(self.hopperCount)
                                     self.collectionCall(url: next!);
                                     print("NEXT")
                                     
                                 } else {
                                     print("DONE")
                                     self.hopperCountLabel.text = String(self.hopperCount)
+                                    
+                                    // TODO: Save count to core data object
                                 }
                                 
                             }
