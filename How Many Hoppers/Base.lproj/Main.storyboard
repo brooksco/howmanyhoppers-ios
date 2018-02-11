@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3mo-ft-WUb">
-                                <rect key="frame" x="88" y="272" width="199" height="143"/>
+                                <rect key="frame" x="88" y="202" width="199" height="283"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How many Hoppers?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LIh-ke-IIn">
                                         <rect key="frame" x="0.0" y="0.0" width="199" height="26.5"/>
@@ -27,9 +27,9 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zqj-mL-Ceu">
-                                        <rect key="frame" x="58" y="26.5" width="83.5" height="116.5"/>
-                                        <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="100"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zqj-mL-Ceu">
+                                        <rect key="frame" x="8" y="26.5" width="183.5" height="256.5"/>
+                                        <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="220"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
