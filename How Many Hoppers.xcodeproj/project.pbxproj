@@ -13,6 +13,8 @@
 		0A030D0F202D49BA0083606D /* How_Many_Hoppers.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0A030D0D202D49BA0083606D /* How_Many_Hoppers.xcdatamodeld */; };
 		0A030D11202D49BA0083606D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A030D10202D49BA0083606D /* Assets.xcassets */; };
 		0A030D14202D49BA0083606D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A030D12202D49BA0083606D /* LaunchScreen.storyboard */; };
+		0AE4CDCD2031559500C75BCC /* HaasGrotSign-65Medium-Web.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0AE4CDCC2031559500C75BCC /* HaasGrotSign-65Medium-Web.ttf */; };
+		0AE4CDD0203159F200C75BCC /* Haas-Grot-Text-55-Roman.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0AE4CDCF203159F200C75BCC /* Haas-Grot-Text-55-Roman.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		0A030D10202D49BA0083606D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A030D13202D49BA0083606D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A030D15202D49BA0083606D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AE4CDCC2031559500C75BCC /* HaasGrotSign-65Medium-Web.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HaasGrotSign-65Medium-Web.ttf"; sourceTree = "<group>"; };
+		0AE4CDCF203159F200C75BCC /* Haas-Grot-Text-55-Roman.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Haas-Grot-Text-55-Roman.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		0A030D05202D49BA0083606D /* How Many Hoppers */ = {
 			isa = PBXGroup;
 			children = (
+				0AE4CDCE2031559B00C75BCC /* Fonts */,
 				0A030D06202D49BA0083606D /* AppDelegate.swift */,
 				0A030D08202D49BA0083606D /* ViewController.swift */,
 				0A030D0A202D49BA0083606D /* Main.storyboard */,
@@ -65,6 +70,15 @@
 				0A030D0D202D49BA0083606D /* How_Many_Hoppers.xcdatamodeld */,
 			);
 			path = "How Many Hoppers";
+			sourceTree = "<group>";
+		};
+		0AE4CDCE2031559B00C75BCC /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				0AE4CDCF203159F200C75BCC /* Haas-Grot-Text-55-Roman.ttf */,
+				0AE4CDCC2031559500C75BCC /* HaasGrotSign-65Medium-Web.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,9 +140,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AE4CDD0203159F200C75BCC /* Haas-Grot-Text-55-Roman.ttf in Resources */,
 				0A030D14202D49BA0083606D /* LaunchScreen.storyboard in Resources */,
 				0A030D11202D49BA0083606D /* Assets.xcassets in Resources */,
 				0A030D0C202D49BA0083606D /* Main.storyboard in Resources */,
+				0AE4CDCD2031559500C75BCC /* HaasGrotSign-65Medium-Web.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
