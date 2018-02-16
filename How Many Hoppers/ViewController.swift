@@ -40,7 +40,6 @@ class ViewController: UIViewController {
             print("Could not fetch. \(error), \(error.userInfo)")
         }
         
-//        collectionCall(url: "http://collection.whitney.org/json/groups/5/?page=1&format=json")
         update()
         
         NotificationCenter.default.addObserver(self, selector: #selector(ViewController.update), name: NSNotification.Name.UIApplicationWillEnterForeground, object: nil)
